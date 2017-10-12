@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 RUN apt-get update && \
-	DEBIANT_FRONTEND=noninteractive \
+	DEBIAN_FRONTEND=noninteractive \
 	apt-get -y install default-jre-headless wget && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*
